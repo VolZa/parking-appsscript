@@ -6,7 +6,6 @@
     "clean": "rm -f code.gs appsscript.json",
     "build": "rollup -c",
     "push": "npm run build && clasp push",
-    "deploy": "npm run clean && npm run build && cp dist/code.gs ./ && cp dist/appsscript.json ./ && clasp push",
     "pull": "clasp pull && echo 'ℹ️ Перевір dist/, не src/'"
   },
   "devDependencies": {

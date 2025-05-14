@@ -1,3 +1,6 @@
-# Всі файли, окрім зібраного
-**/**
-!code.gs
+node_modules/
+rollup.config.mjs
+tsconfig.json
+package.json
+package-lock.json
+src/
