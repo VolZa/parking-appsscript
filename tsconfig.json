@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "lib": ["esnext"],
+    "types": ["@types/google-apps-script"],
+    "strict": true,
+    "noEmit": true,
+    "importHelpers": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"]
+}

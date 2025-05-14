@@ -1,0 +1,23 @@
+{
+  "name": "tsapps-parking",
+  "version": "1.0.0",
+  "description": "Google Apps Script project using TypeScript",
+  "scripts": {
+    "clean": "rm -f code.gs appsscript.json",
+    "build": "rollup -c",
+    "push": "npm run build && clasp push",
+    "deploy": "npm run clean && npm run build && cp dist/code.gs ./ && cp dist/appsscript.json ./ && clasp push",
+    "pull": "clasp pull && echo 'ℹ️ Перевір dist/, не src/'"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/google-apps-script": "^1.0.56",
+    "rollup": "^3.29.4",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "typescript": "^5.8.3",
+    "undici-types": "^7.8.0"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
+  }
+}
