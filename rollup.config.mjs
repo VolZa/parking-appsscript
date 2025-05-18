@@ -10,6 +10,7 @@ export default {
     intro: "var global = this;",
   },
   external: ["tslib"],
+  treeshake: false,
   plugins: [
     typescript({
       tsconfig: "./tsconfig.json",
